@@ -120,6 +120,16 @@ body{
 	font-size: larger;
 }
 
+#projets img{
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+#projets img:hover{
+	box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.5);
+      transform: scale(1.05);
+}
+
 #skills div{
 	display: flex;
 	justify-content: space-evenly;
