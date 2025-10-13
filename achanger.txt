@@ -1,0 +1,10 @@
+mettre à jour la présentation pour la deuxieme année de BUT, ajouter/modifier des projets pour faire apparaitre ceux du second semestre, mettre à jour les conpétences et la formation
+
+diriger visuellement et techn iquement le portfolio vers l'idée du parcours de dev d'app
+
+reprendre l'organisation du cv en particulier les compétences (pas juste les compétences techniques)
+
+ajouter un formulaire et retirer le mail
+
+voir p4.01 grille d'evaluation,
+
