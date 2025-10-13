@@ -122,8 +122,9 @@ body{
 }
 
 #projets img{
-	border-radius: 12px;
+	border-radius: 20px;
 	box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+	transition: 0.25s;
 }
 
 #projets img:hover{
