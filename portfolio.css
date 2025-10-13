@@ -91,6 +91,7 @@ body{
   margin: 10px !important;
   max-width: 800px;
   text-align: justify;
+  
 
 }
 
@@ -254,5 +255,5 @@ footer {
 }
 
 p {
-  font-size: 20;
+  font-size: 20px;
 }
