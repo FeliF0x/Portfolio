@@ -1,6 +1,10 @@
  
 
 
+html, body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,18 +41,33 @@ h2{
 }
 
 .module{
-    background: #333;
+    background: rgba(51, 51, 51, 0.85);
     padding: 120px 0 100px;
 }
 
 .module-grey{
-    background: #222;
+    background: rgba(34, 34, 34, 0.85);
     padding: 120px 0 100px;
 }
 
 body{
     margin: 0px;
     color: #AAA;
+    background: #000;
+}
+
+#particles-js {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main {
+  position: relative;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -170,6 +189,8 @@ a {
 
 
 footer {
+  position: relative;
+  z-index: 1;
   background-color: black;
   color: white;
   text-align: center;
@@ -177,7 +198,7 @@ footer {
 }
 
 #home {
-	background-color: #5b5963;
+	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	padding: 0;
@@ -200,26 +221,21 @@ footer {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: #fa1f55;
-	background: -moz-linear-gradient(45deg, #fa1f55 0%, #fd735a 100%);
-	background: -webkit-linear-gradient(45deg, #000000bd 0%, #3f48af 100%);
-	background: -o-linear-gradient(45deg, #000000bd 0%, #3f48af 100%);
-	background: -ms-linear-gradient(45deg, #000000bd 0%, #3f48af 100%);
-	background: linear-gradient(45deg, #000000bd 0%, #3f48af 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa1f55', endColorstr='#fd735a', GradientType=1 );
-	opacity: 0.5;
+	background: rgba(250, 31, 85, 0.15);
+	background: -moz-linear-gradient(45deg, rgba(250, 31, 85, 0.15) 0%, rgba(63, 72, 175, 0.15) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.15) 0%, rgba(63, 72, 175, 15) 100%);
+	background: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.15) 0%, rgba(63, 72, 175, 15) 100%);
+	background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.15) 0%, rgba(63, 72, 175, 15) 100%);
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.15) 0%, rgba(63, 72, 175, 15) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26FA1F55', endColorstr='#26FD735A', GradientType=1 );
 }
 
 
-#home .particles-js-canvas-el {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	height: 100% !important;
-	width: 100% !important;
-	z-index: 1;
+#particles-js .particles-js-canvas-el {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .intro {

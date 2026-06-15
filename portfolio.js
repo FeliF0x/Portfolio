@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Initialisation de Particles.js
-particlesJS('home', {
+particlesJS('particles-js', {
     "particles": {
       "number": {
         "value": 100, // Nombre de particules
@@ -35,8 +35,8 @@ particlesJS('home', {
       "shape": {
         "type": "circle", // Forme des particules
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#fff"
         }
       },
       "opacity": {
@@ -49,7 +49,7 @@ particlesJS('home', {
         }
       },
       "size": {
-        "value": 3, // Taille des particules
+        "value": 5, // Taille des particules
         "random": true,
         "anim": {
           "enable": true,
@@ -58,7 +58,7 @@ particlesJS('home', {
         }
       },
       "line_linked": {
-        "enable": true, // Relier les particules avec des lignes
+        "enable": false, // Relier les particules avec des lignes
         "distance": 150,
         "color": "#fff",
         "opacity": 0.4,
