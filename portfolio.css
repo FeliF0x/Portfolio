@@ -10,7 +10,7 @@ html {
 }
 
 span{
-    font-size: 100px;
+  font-size: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -41,12 +41,12 @@ h2{
 }
 
 .module{
-    background: rgba(51, 51, 51, 0.85);
+    background: rgba(51, 51, 51);
     padding: 120px 0 100px;
 }
 
 .module-grey{
-    background: rgba(34, 34, 34, 0.85);
+    background: rgba(34, 34, 34);
     padding: 120px 0 100px;
 }
 
@@ -128,22 +128,32 @@ main {
 }
 
 #projets ul {
+	padding: 2%;
 	display: flex;
+	 list-style: none;
 	gap: 10px;
 	justify-content: space-around;
 	list-style: none;
 }
 
+#projets ul li {
+	width: 32%;
+}
+
 #projets p{
 	text-align: center;
-	max-width: 200px;
 	font-size: larger;
 }
 
 #projets img{
+	display: block;
 	border-radius: 20px;
 	box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 	transition: 0.25s;
+	width: 100%;
+    height: auto;
+    display: block;
+	
 }
 
 #projets img:hover{
@@ -274,3 +284,87 @@ footer {
 p {
   font-size: 20px;
 }
+
+/* sea grass and sea ray*/
+.seabed {
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        height: 150px;
+    }
+
+    .grass {
+        position: absolute;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(to top, #006633, #00cc66);
+        border-radius: 2px;
+        transform-origin: bottom center;
+        animation: sway 3s ease-in-out infinite alternate;
+    }
+
+    .sunRay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 150px;
+    }
+
+    .sun {
+        position: absolute;
+        top: 0;
+        background: linear-gradient(to top, #006680, #ffffff);
+		background: linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 1),  /* Red with 80% opacity */
+        rgba(0, 0, 0, 0)     /* Fully transparent */
+    );
+        border-radius: 2px;
+        transform-origin: top center;
+        animation: sway2 3s ease-in-out infinite alternate;
+        
+    }
+
+    .contenu {
+        height: 100%;
+        width: 100%;
+    }
+
+    @keyframes sway {
+        0% { transform: rotate(-20deg); }
+        100% { transform: rotate(-5deg); }
+    }
+
+    @keyframes sway2 {
+        0% { transform: rotate(8deg); 
+                opacity: .01;}
+        100% { transform: rotate(16deg); 
+                opacity: .2;}
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+	/*jellyfishes*/
+
+	#canvas {
+		background-color: transparent;
+		position:fixed;
+		display:block;
+		margin:0 auto;
+		top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+	}
+
+	.vide {
+		background-color: transparent;
+		height: 50px;
+		width: 100%;
+	}
+
+	

@@ -117,6 +117,40 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
   });
-  
+
+  (function() {
+    const seabed = document.getElementById('seabed');
+    const grassCount = 100; // Number of grass blades
+
+    for (let i = 0; i < grassCount; i++) {
+        const blade = document.createElement('div');
+        blade.classList.add('grass');
+
+        // Random position, height, and animation delay for natural look
+        blade.style.left = `${Math.random() * 100}%`;
+        blade.style.height = `${50 + Math.random() * 50}px`;
+        blade.style.animationDuration = `${2 + Math.random() * 2}s`;
+        
+
+        seabed.appendChild(blade);
+    }
+
+    const sunRay = document.getElementById('sunRay');
+    const sunRayCount = 50;
+
+    for (let i = 0; i < sunRayCount; i++) {
+        const ray = document.createElement('div');
+        ray.classList.add('sun');
+
+        // Random position, height, and animation delay for natural look
+        ray.style.left = `${Math.random() * 100}%`;
+        ray.style.height = `${100 + Math.random() * 500}px`;
+        ray.style.width = `${4 + Math.random() * 5}px`;
+        ray.style.animationDuration = `${2 + Math.random() * 2}s`;
+        
+
+        sunRay.appendChild(ray);
+    }
+})();
 
  
