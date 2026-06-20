@@ -120,7 +120,7 @@ particlesJS('particles-js', {
 
   (function() {
     const seabed = document.getElementById('seabed');
-    const grassCount = 100; // Number of grass blades
+    const grassCount = 200; // Number of grass blades
 
     for (let i = 0; i < grassCount; i++) {
         const blade = document.createElement('div');
