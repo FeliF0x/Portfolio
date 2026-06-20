@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Algorithme de classification de dépêches</title>
+    <title>Refonte d'un module de l'ERP Bravo de chez SAMSE</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="projet.css">
 </head>
@@ -9,32 +9,41 @@
     <div class="navbar"><a href="index.html#projets"><b>&lt; Accueil</b></a></div>
     <header>
         
-        <h1>Algorithme de classification de dépêches</h1>
+        <h1>Refonte d'un module de l'ERP Bravo de chez SAMSE</h1>
         <div class="ligne"></div>
     </header>
     <main>
         <div>
             <h2>Objectifs</h2>
-            <p> Le but général de ce projet était de classifier 500 dépêches de presse. J'ai travaillé en binôme sur ce projet pendant 8h encadrées et environ une dizaine d'heures non-encadrées.<br>
+            <p> Le Groupe SAMSE utilise un ERP (Enterprise Resource Planning) appelé Bravo 
+                qui permet de gérer et d’intégrer l’ensemble des processus de l’entreprise. 
+                L’ERP Bravo re-groupe une multitude d’outils utilisés par les différentes agences du Groupe SAMSE. 
+                Ces outils sont appelés modules. Dans le cadre d’une refonte des modules de Bravo,
+                 mon sujet de stage a porté sur la création d’un nouveau module de planning des traitements qui intègre une nouvelle fonctionnalité voulue par les utilisateurs.<br>
             </p>
 
             <h2>Description/Organisation</h2>
-            <p>Le langage utilisé était du Java.</p>
-            <p>La première étape a consisté à identifier,"à la main", les mots clés pour définir le type de dépêches : "art","sport","politique"...</p>
-            <p>La deuxième étape a permis de réaliser une identification automatique des mots clés, cette identification a conduit à une bien meilleure classification des dépêches.</p>
-            <p>Ce projet a donné lieu à la rédaction d'un rapport ainsi qu'à une courte présentation orale.</p> 
+            <p>Dans un premier temps j'ai dû me former aux environnements de développements utilisés dans l’entreprise (An-gular, Spring Boot) en commençant par effectuer les tutoriels dispnibles sur le site officiel d'Angular.
+                Ensuite j'ai pu réaliser de petites missions simples sur des modules déjà refaits pour m'habituer à l'architecture des fichiers et à la structure du code.
+            </p>
+            <p>En second temps j'ai recueilli des informations auprès des utilisateurs de l'ancien module pour connaitre les fonctionnalités à garder, à retirer et à ajouter.
+                Ensuite j'ai pu réaliser une maquette en utilisant l'outil Whimsical. </p> 
+            <p> Après l'approbation de la maquette par les utilisateurs, j'ai pu commencer le développement de l'application Web. 
+                Le développement se fait en deux parties, d'abord le front-end, codée sur Angular, qui gère les visuels et l’interactivité de l’application Web
+                 et une partie back-end, codée sur Spring boot, qui gère la communication avec des Web Services.
+                  Les Web Services ont pour mission d’interagir avec la base de données pour remonter aux modules les données nécessaires. 
+                  Ils permettent aussi de mettre à jour la base de données.
+            </p> 
 
             <h2>Techniques et savoir faire acquis</h2>
             <ul>
-                <li>Bases de la programmation java</li>
-                <li>Algorithmie</li>
-                <li>Organisation du travail en relation avec le binôme</li>
-                <li>Adopter de bonnes pratiques de conception et de programmation</li>
-                <li>Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                <li>Bases de la programmation sur Angular et Spring boot.</li>
+                <li>Découverte du travail en entreprise et appliquation de la gestion de projet dans un cas concret.</li>
+                <li>Adopter de bonnes pratiques de conception et de programmation.</li>
             </ul>
         </div>
         
-        <img src="nuagemots.jpg" alt="image" width="700px" height="350px">
+        <img src="screenshot_module.png" alt="image" width="700px" height="350px">
     </main>
     <footer>
         <p>&copy; 2025 Le Guennec</p>
