@@ -161,6 +161,11 @@ main {
       transform: scale(1.05);
 }
 
+#skills{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #skills > div{
 	display: flex;
 	justify-content: space-evenly;

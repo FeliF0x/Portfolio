@@ -50,7 +50,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #222;
+    background: rgba(29, 29, 64);
     padding: 10% 5% ;
     color: white;
     font-size: 20px;
