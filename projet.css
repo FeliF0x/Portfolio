@@ -48,7 +48,7 @@ header h1{
 
 main {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     background: rgba(29, 29, 64);
     padding: 10% 5% ;
