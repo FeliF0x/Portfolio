@@ -188,6 +188,10 @@ main {
 	max-width: 500px;
 }
 
+#techskills {
+  padding: 10%;
+}
+
 
 h3 {
 	text-decoration: underline;
